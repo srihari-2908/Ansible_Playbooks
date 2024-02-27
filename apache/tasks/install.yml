@@ -1,0 +1,3 @@
+---
+- name: Installation of HTTPD Pachages
+  apt: name=apache2 state=latest

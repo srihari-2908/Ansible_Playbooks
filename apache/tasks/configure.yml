@@ -1,0 +1,10 @@
+---
+- name: copy html files
+  copy: src=files/web.html dest=/var/www/html
+- name: copy html files
+  copy: src=files/product1.jpg dest=/var/www/html
+- name: copy html files
+  copy: src=files/product2.jpg dest=/var/www/html
+  notify:
+    - restart apache
+

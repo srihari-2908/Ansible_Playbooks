@@ -1,0 +1,7 @@
+---
+- name: Run Apache Role
+  hosts: all
+  become: yes
+    # To run the tasks with elevated privileges (sudo)
+  roles:
+    - apache  # Replace with the actual name of your role
